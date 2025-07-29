@@ -97,6 +97,7 @@ We have identified over 7 million records where the intended use of a drug does 
 ### 🧠 Predictive Modeling
 Model trained with `RandomForestClassifier` achieved 90.2% accuracy in predicting serious ADRs.
 
+The predictive model we trained performs well on common, non-serious reactions but currently misses most serious ones. While it offers strong support for trend monitoring and triage, it should not be used for final safety decisions without more advanced modeling and richer patient data.
 ---
 
 ## 📋 Model Audit Summary
@@ -110,7 +111,7 @@ Model trained with `RandomForestClassifier` achieved 90.2% accuracy in predictin
   "Test Accuracy": 0.902
 }
 ```
-
+The ADR Seriousness Prediction Model achieved 90.2% test accuracy using age, sex, and weight data from 69,612 reports. Built using a Random Forest Classifier, it helps flag high-risk ADR cases for review. While accurate overall, its simplicity limits detection of rare but severe outcomes, and it should be complemented by expert oversight or enhanced features for real-world deployment.
 ---
 
 ## 💡 Conceptual Enhancement – AGI Viewpoint
