@@ -87,10 +87,12 @@ We found that over 19,000 treatment records in the current dataset are using a p
 ### 🚨 CAPA Flagged Pairs
 Most frequent drug-reaction combinations (e.g., `XOLAIR` – Pneumonia, `METHOTREXATE` – Arthralgia).
 
+The CAPA dashboard highlights repeated adverse events associated with specific drugs, like INFLECTRA and OXYCONTIN. These high-frequency signals suggest potential misuse, side effects, or administration issues that may need quality review or regulatory escalation. Monitoring these trends proactively supports compliance with health authority expectations and strengthens risk-based quality management.
 
 ### ⚠️ Mismatch Detection
 7036759 indication vs. reaction mismatches (e.g., `Hypertension` vs. `Type 2 Diabetes Mellitus`).
 
+We have identified over 7 million records where the intended use of a drug does not match the adverse reaction reported. Some mismatches may reflect real safety issues, like panic attacks or abnormal behavior when treating unrelated conditions. Others may indicate off-label use or poor data capture. These mismatches should be reviewed to assess potential compliance or safety concerns.
 
 ### 🧠 Predictive Modeling
 Model trained with `RandomForestClassifier` achieved 90.2% accuracy in predicting serious ADRs.
