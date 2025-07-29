@@ -82,6 +82,7 @@ FDA FAERS Q4 2020 public datasets:
 ### 📉 Deviation Tracking
 19,967 records flagged with invalid therapy timelines (THER dataset).
 
+We found that over 19,000 treatment records in the current dataset are using a placeholder date (January 1, 1970) instead of the actual therapy start or end dates. This issue can compromise our ability to verify treatment durations, assess quality risks, or meet regulatory audit expectations. These records should be reviewed and corrected to restore data reliability
 
 ### 🚨 CAPA Flagged Pairs
 Most frequent drug-reaction combinations (e.g., `XOLAIR` – Pneumonia, `METHOTREXATE` – Arthralgia).
